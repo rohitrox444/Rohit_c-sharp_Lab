@@ -1,0 +1,28 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+
+namespace Rohit_c_sharp_lab160719
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            ConsoleKeyInfo k;
+            Console.Write("Hello World\n");
+            Console.WriteLine("Press A Key");
+
+            k = Console.ReadKey();
+
+            Console.Write("\b");
+
+            if (k.KeyChar == 'a')
+                Console.WriteLine(k.KeyChar);
+            else
+                Console.WriteLine("Press A Key");
+
+            Console.ReadKey();
+        }
+    }
+}
